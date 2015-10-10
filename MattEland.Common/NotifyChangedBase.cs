@@ -11,7 +11,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 
 namespace MattEland.Common
 {

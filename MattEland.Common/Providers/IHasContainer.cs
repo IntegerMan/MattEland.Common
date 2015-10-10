@@ -7,7 +7,7 @@
 // Last Modified by: Matt Eland
 // ---------------------------------------------------------
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 
 namespace MattEland.Common.Providers
 {

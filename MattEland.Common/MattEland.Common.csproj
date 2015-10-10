@@ -87,6 +87,74 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Annotations\AspChildControlTypeAttribute.cs" />
+    <Compile Include="Annotations\AspDataFieldAttribute.cs" />
+    <Compile Include="Annotations\AspDataFieldsAttribute.cs" />
+    <Compile Include="Annotations\AspMethodPropertyAttribute.cs" />
+    <Compile Include="Annotations\AspMvcActionAttribute.cs" />
+    <Compile Include="Annotations\AspMvcActionSelectorAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcControllerAttribute.cs" />
+    <Compile Include="Annotations\AspMvcDisplayTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcEditorTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcMasterAttribute.cs" />
+    <Compile Include="Annotations\AspMvcMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcModelTypeAttribute.cs" />
+    <Compile Include="Annotations\AspMvcPartialViewAttribute.cs" />
+    <Compile Include="Annotations\AspMvcPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcSupressViewErrorAttribute.cs" />
+    <Compile Include="Annotations\AspMvcTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcViewAttribute.cs" />
+    <Compile Include="Annotations\AspMvcViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspRequiredAttributeAttribute.cs" />
+    <Compile Include="Annotations\AspTypePropertyAttribute.cs" />
+    <Compile Include="Annotations\AssertionConditionAttribute.cs" />
+    <Compile Include="Annotations\AssertionConditionType.cs" />
+    <Compile Include="Annotations\AssertionMethodAttribute.cs" />
+    <Compile Include="Annotations\BaseTypeRequiredAttribute.cs" />
+    <Compile Include="Annotations\CanBeNullAttribute.cs" />
+    <Compile Include="Annotations\CannotApplyEqualityOperatorAttribute.cs" />
+    <Compile Include="Annotations\CollectionAccessAttribute.cs" />
+    <Compile Include="Annotations\CollectionAccessType.cs" />
+    <Compile Include="Annotations\ContractAnnotationAttribute.cs" />
+    <Compile Include="Annotations\HtmlAttributeValueAttribute.cs" />
+    <Compile Include="Annotations\HtmlElementAttributesAttribute.cs" />
+    <Compile Include="Annotations\ImplicitUseKindFlags.cs" />
+    <Compile Include="Annotations\ImplicitUseTargetFlags.cs" />
+    <Compile Include="Annotations\InstantHandleAttribute.cs" />
+    <Compile Include="Annotations\InvokerParameterNameAttribute.cs" />
+    <Compile Include="Annotations\ItemCanBeNullAttribute.cs" />
+    <Compile Include="Annotations\ItemNotNullAttribute.cs" />
+    <Compile Include="Annotations\LinqTunnelAttribute.cs" />
+    <Compile Include="Annotations\LocalizationRequiredAttribute.cs" />
+    <Compile Include="Annotations\MacroAttribute.cs" />
+    <Compile Include="Annotations\MeansImplicitUseAttribute.cs" />
+    <Compile Include="Annotations\NoEnumerationAttribute.cs" />
+    <Compile Include="Annotations\NoReorder.cs" />
+    <Compile Include="Annotations\NotifyPropertyChangedInvocatorAttribute.cs" />
+    <Compile Include="Annotations\NotNullAttribute.cs" />
+    <Compile Include="Annotations\PathReferenceAttribute.cs" />
+    <Compile Include="Annotations\PublicAPIAttribute.cs" />
+    <Compile Include="Annotations\PureAttribute.cs" />
+    <Compile Include="Annotations\RazorHelperCommonAttribute.cs" />
+    <Compile Include="Annotations\RazorImportNamespaceAttribute.cs" />
+    <Compile Include="Annotations\RazorInjectionAttribute.cs" />
+    <Compile Include="Annotations\RazorLayoutAttribute.cs" />
+    <Compile Include="Annotations\RazorSectionAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteLiteralMethodAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteMethodAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteMethodParameterAttribute.cs" />
+    <Compile Include="Annotations\RegexPatternAttribute.cs" />
+    <Compile Include="Annotations\SourceTemplateAttribute.cs" />
+    <Compile Include="Annotations\StringFormatMethodAttribute.cs" />
+    <Compile Include="Annotations\TerminatesProgramAttribute.cs" />
+    <Compile Include="Annotations\UsedImplicitlyAttribute.cs" />
+    <Compile Include="Annotations\ValueProviderAttribute.cs" />
+    <Compile Include="Annotations\XamlItemBindingOfItemsControlAttribute.cs" />
+    <Compile Include="Annotations\XamlItemsControlAttribute.cs" />
     <Compile Include="AssemblyExtensions.cs" />
     <Compile Include="CollectionExtensions.cs" />
     <Compile Include="ExceptionExtensions.cs" />
@@ -112,15 +180,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="JetBrains.Annotations.PCL328, Version=9.2.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBrains.Annotations.9.2.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\JetBrains.Annotations.PCL328.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">

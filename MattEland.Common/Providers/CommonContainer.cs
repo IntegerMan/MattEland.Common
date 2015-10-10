@@ -14,7 +14,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 using System.Diagnostics.Contracts;
 namespace MattEland.Common.Providers
 {

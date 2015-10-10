@@ -11,7 +11,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 
 namespace MattEland.Common
 {

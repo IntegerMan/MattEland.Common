@@ -14,7 +14,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 
 namespace MattEland.Common
 {

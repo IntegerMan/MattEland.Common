@@ -11,7 +11,7 @@ using System;
 using System.Globalization;
 using System.Text;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 

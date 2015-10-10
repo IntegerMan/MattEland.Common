@@ -1,6 +1,6 @@
 using System;
 
-using JetBrains.Annotations;
+using MattEland.Common.Annotations;
 
 namespace MattEland.Common
 {
