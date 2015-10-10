@@ -11,7 +11,7 @@ using System;
 
 using NUnit.Framework;
 
-namespace MattEland.Testing
+namespace MattEland.Common.Testing
 {
     /// <summary>
     ///     An <see cref="Attribute"/> used to decorate unit test collections

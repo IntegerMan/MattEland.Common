@@ -17,7 +17,7 @@ using MattEland.Common.Annotations;
 using MattEland.Common;
 
 using Shouldly;
-
+using System.Diagnostics.Contracts;
 namespace MattEland.Common.Testing
 {
     /// <summary>
@@ -207,6 +207,8 @@ namespace MattEland.Common.Testing
         public static TInterface ShouldImplementInterface<TInterface>(
             [CanBeNull] this object source) where TInterface : class
         {
+            Contract.Requires(source != null);
+
             if (source == null) { throw new ArgumentNullException(nameof(source)); }
 
             var cast = source as TInterface;
