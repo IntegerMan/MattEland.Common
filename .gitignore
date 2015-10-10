@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MattEland.Common/bin
+/MattEland.Common/obj
+/MattEland.Common.Testing/bin
+/MattEland.Common.Testing/obj
+/packages
