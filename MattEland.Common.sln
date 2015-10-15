@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.Common.Testing", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{84B1B628-213F-4055-B46E-47022806505A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.Common.Definitions", "MattEland.Common.Definitions\MattEland.Common.Definitions.csproj", "{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{913569FC-7B28-432F-A29A-8ACC7A1A5FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{913569FC-7B28-432F-A29A-8ACC7A1A5FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{913569FC-7B28-432F-A29A-8ACC7A1A5FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +42,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{514CB422-A6EF-4C75-B925-92AB599BA1BE} = {84B1B628-213F-4055-B46E-47022806505A}
 		{913569FC-7B28-432F-A29A-8ACC7A1A5FBC} = {84B1B628-213F-4055-B46E-47022806505A}
+		{AF66AFB8-9523-4211-8B68-88B8B6F6E6F4} = {84B1B628-213F-4055-B46E-47022806505A}
 	EndGlobalSection
 EndGlobal
