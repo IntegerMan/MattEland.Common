@@ -17,7 +17,7 @@ namespace MattEland.Common.Testing
     ///     An <see cref="Attribute"/> used to decorate unit test collections
     /// </summary>
     [AttributeUsage(AttributeTargets.Class)]
-    public class UnitTestProvider : TestFixtureAttribute
+    public sealed class UnitTestProvider : TestFixtureAttribute
     {
 
 
