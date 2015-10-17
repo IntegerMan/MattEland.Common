@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MattEland.Presentation.Logical</name>
+    </assembly>
+    <members>
+        <member name="T:MattEland.Presentation.Logical.Widgets.IWidget">
+            <summary>
+                Interface defining a user interface widget. Widgets are essentially the View Model of
+                user interface components mixed with the blueprints that instruct the client layer to
+                build, arrange, and configure the concrete client-specific user interface component(s)
+                for any given widget.
+            </summary>
+        </member>
+        <member name="P:MattEland.Presentation.Logical.Widgets.IWidget.IsVisible">
+            <summary>
+                Gets or sets whether or not the widget is visible. This defaults to <c>true</c>.
+            </summary>
+            <value><c>true</c> if this widget is visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:MattEland.Presentation.Logical.Widgets.IWidget.DataContext">
+            <summary>
+                Gets or sets the data context.
+            </summary>
+            <remarks>
+                The DataContext is used by some controls for data binding and can act as a tag value in
+                others allowing the caller to put miscellaneous information related to what the widget
+                represents so that the widget can be updated later.
+            </remarks>
+            <value>
+                The data context.
+            </value>
+        </member>
+    </members>
+</doc>

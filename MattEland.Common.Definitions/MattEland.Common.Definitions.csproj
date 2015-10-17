@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IHasIdentifier.cs" />
+    <Compile Include="IPropertyItem.cs" />
+    <Compile Include="IPropertyProvider.cs" />
     <Compile Include="Search\ISearchOperation.cs" />
     <Compile Include="Search\ISearchProvider.cs" />
     <Compile Include="Search\ISearchResult.cs" />

@@ -38,10 +38,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Folder Include="Widgets\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\IWidget.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MattEland.Common.Definitions\MattEland.Common.Definitions.csproj">

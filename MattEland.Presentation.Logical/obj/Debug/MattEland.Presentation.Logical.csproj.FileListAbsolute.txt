@@ -1,0 +1,12 @@
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Presentation.Logical.XML
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Presentation.Logical.dll
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Presentation.Logical.pdb
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Presentation.Logical.dll.CodeAnalysisLog.xml
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Presentation.Logical.dll.lastcodeanalysissucceeded
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Common.Definitions.dll
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Common.dll
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Common.Definitions.pdb
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\bin\Debug\MattEland.Common.pdb
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\obj\Debug\MattEland.Presentation.Logical.csprojResolveAssemblyReference.cache
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\obj\Debug\MattEland.Presentation.Logical.dll
+C:\Dev\Alfred\MattEland.Common\MattEland.Presentation.Logical\obj\Debug\MattEland.Presentation.Logical.pdb
