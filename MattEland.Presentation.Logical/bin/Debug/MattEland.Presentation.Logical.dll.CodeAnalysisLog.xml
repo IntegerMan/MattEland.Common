@@ -6,7 +6,7 @@
    <Modules>
     <Module Name="matteland.presentation.logical.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-21 02:32:50Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-22 17:33:39Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'MattEland.Presentation.Logical.dll' with a strong name key.</Issue>
       </Message>
      </Messages>

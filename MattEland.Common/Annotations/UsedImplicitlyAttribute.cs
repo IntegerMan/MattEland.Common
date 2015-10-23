@@ -7,7 +7,7 @@ namespace MattEland.Common.Annotations
     /// so this symbol will not be marked as unused (as well as by other usage inspections).
     /// </summary>
     [AttributeUsage(AttributeTargets.All)]
-    public sealed class UsedImplicitlyAttribute : Attribute
+    public class UsedImplicitlyAttribute : Attribute
     {
         public UsedImplicitlyAttribute()
             : this(ImplicitUseKindFlags.Default, ImplicitUseTargetFlags.Default)
