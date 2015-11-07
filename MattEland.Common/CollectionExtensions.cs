@@ -8,7 +8,9 @@
 // ---------------------------------------------------------
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 
 using MattEland.Common.Annotations;
@@ -94,6 +96,37 @@ namespace MattEland.Common
             return list[index];
         }
 
+        /// <summary>
+        ///     A collection extension method that returns the first item of the specified type.
+        /// </summary>
+        /// <typeparam name="T"> The type of item we're looking for. </typeparam>
+        /// <param name="items"> The items to act on. </param>
+        /// <returns>
+        ///     The first item of type <typeparam name="T" />.
+        /// </returns>
+        [NotNull]
+        public static T FirstOfType<T>([NotNull] this IEnumerable items)
+        {
+            Contract.Requires(items != null);
+            Contract.Ensures(Contract.Result<T>() != null);
+
+            if (items == null) throw new ArgumentNullException(nameof(items));
+
+            //- Grab the type that we're looking for from the generic parameter so we don't need to do it in the loop
+            var seekType = typeof(T);
+
+            // Search for the first non-null item that matches the type
+            foreach (var item in items)
+            {
+                if (item?.GetType() == seekType)
+                {
+                    return (T)item;
+                }
+            }
+
+            //- If no item was found, we need to throw since we're following the LINQ "First" branch of methods
+            throw new KeyNotFoundException("No item was found in the collection of type " + seekType.Name);
+        }
 
     }
 }

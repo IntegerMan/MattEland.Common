@@ -72,6 +72,8 @@ namespace MattEland.Common
         [NotNull]
         public static string NonNull([CanBeNull] this string input)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             return input ?? string.Empty;
         }
 
@@ -90,6 +92,8 @@ namespace MattEland.Common
         [NotNull]
         public static string IfNull([CanBeNull] this string input, [NotNull] string replacement)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             if (replacement == null) { throw new ArgumentNullException(nameof(replacement)); }
 
             return input ?? replacement;
@@ -203,6 +207,8 @@ namespace MattEland.Common
             [CanBeNull] IFormatProvider culture = null,
             [CanBeNull] string outputFormat = null)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             culture = culture ?? CultureInfo.CurrentCulture;
 
             return input?.ToString(outputFormat, culture) ?? string.Empty;
@@ -216,6 +222,8 @@ namespace MattEland.Common
         [NotNull]
         public static string ForUser([CanBeNull] this IFormattable input)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             return input.AsNonNullString();
         }
 
@@ -227,6 +235,8 @@ namespace MattEland.Common
         [NotNull]
         public static string Invariant([CanBeNull] this IFormattable input)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             return input?.Format(CultureInfo.InvariantCulture) ?? string.Empty;
         }
 
@@ -237,8 +247,11 @@ namespace MattEland.Common
         /// <returns>
         ///     The comma delimited string.
         /// </returns>
+        [NotNull]
         public static string BuildCommaDelimitedString([CanBeNull] this IEnumerable<string> values)
         {
+            Contract.Ensures(Contract.Result<string>() != null);
+
             // Guard against null
             if (values == null) return string.Empty;
 

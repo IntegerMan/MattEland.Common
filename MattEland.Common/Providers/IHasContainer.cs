@@ -24,6 +24,6 @@ namespace MattEland.Common.Providers
         ///     The container.
         /// </value>
         [NotNull]
-        new T Container { get; }
+        T Container { get; }
     }
 }
