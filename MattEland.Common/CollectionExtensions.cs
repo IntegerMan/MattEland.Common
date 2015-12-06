@@ -90,25 +90,59 @@ namespace MattEland.Common
             randomizer = randomizer ?? new Random();
 
             // Get a random index somewhere in the list
-            int index = randomizer.Next(list.Count);
+            var index = randomizer.Next(list.Count);
 
             // Return the item at the random index
             return list[index];
         }
 
         /// <summary>
-        ///     A collection extension method that returns the first item of the specified type.
+        ///     A collection extension method that returns the first item of the specified type or throws
+        ///     a KeyNotFoundException if the item was not found.
         /// </summary>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when one or more required arguments are <lang keyword="null" />.
+        /// </exception>
+        /// <exception cref="KeyNotFoundException">
+        ///     Thrown when no matching item was found.
+        /// </exception>
         /// <typeparam name="T"> The type of item we're looking for. </typeparam>
         /// <param name="items"> The items to act on. </param>
         /// <returns>
         ///     The first item of type <typeparam name="T" />.
         /// </returns>
         [NotNull]
-        public static T FirstOfType<T>([NotNull] this IEnumerable items)
+        public static T FirstOfType<T>([NotNull] this IEnumerable items) where T : class
         {
             Contract.Requires(items != null);
             Contract.Ensures(Contract.Result<T>() != null);
+
+            // Outsource the work to the FirstOrDefault operation
+            var match = items.FirstOrDefaultOfType<T>();
+
+            if (match != null) return match;
+
+            //- If no item was found, we need to throw since we're following the LINQ "First" branch of methods
+            throw new KeyNotFoundException("No item was found in the collection of type "
+                                           + typeof(T).Name);
+        }
+
+        /// <summary>
+        ///     A collection extension method that returns the first item of the specified type or null
+        ///     if no item was found.
+        /// </summary>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when one or more required arguments are <lang keyword="null" />.
+        /// </exception>
+        /// <typeparam name="T"> The type of item we're looking for. </typeparam>
+        /// <param name="items"> The items to act on. </param>
+        /// <returns>
+        ///     The first item of type <typeparam name="T" /> or null.
+        /// </returns>
+        [CanBeNull]
+        public static T FirstOrDefaultOfType<T>([NotNull] this IEnumerable items) where T : class
+        {
+            Contract.Requires(items != null);
 
             if (items == null) throw new ArgumentNullException(nameof(items));
 
@@ -124,8 +158,8 @@ namespace MattEland.Common
                 }
             }
 
-            //- If no item was found, we need to throw since we're following the LINQ "First" branch of methods
-            throw new KeyNotFoundException("No item was found in the collection of type " + seekType.Name);
+            //- If no item was found, return null
+            return null;
         }
 
     }
