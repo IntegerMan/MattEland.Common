@@ -7,8 +7,6 @@
 // Last Modified by: Matt Eland
 // ---------------------------------------------------------
 
-using System.Collections.Generic;
-
 using MattEland.Ani.Alfred.Core.Definitions;
 using MattEland.Common.Annotations;
 
