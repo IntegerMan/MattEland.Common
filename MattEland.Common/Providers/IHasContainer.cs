@@ -15,7 +15,7 @@ namespace MattEland.Common.Providers
     /// <summary>
     ///     Interface for types that have <see cref="IObjectContainer"/> members.
     /// </summary>
-    public interface IHasContainer<T> where T : class, IObjectContainer
+    public interface IHasContainer<out T> where T : class, IObjectContainer
     {
         /// <summary>
         ///     Gets the container.
