@@ -1,12 +1,3 @@
-// ---------------------------------------------------------
-// NotifyChangedBase.cs
-// 
-// Created on:      09/03/2015 at 1:31 PM
-// Last Modified:   09/03/2015 at 1:35 PM
-// 
-// Last Modified by: Matt Eland
-// ---------------------------------------------------------
-
 using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
